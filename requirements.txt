@@ -1,0 +1,9 @@
+-e git+https://github.com/akretion/odoo-robot-framework.git#egg=odoo-robot-framework
+sphinxcontrib-robotframework
+sphinx-rtd-theme
+sphinx_bootstrap_theme
+hieroglyph
+robotframework-selenium2screenshots
+robotframework-databaselibrary
+robotframework-xvfb
+psycopg2
