@@ -6,10 +6,21 @@
 Welcome to Odoo Executable Documentation by Akretion's documentation!
 =====================================================================
 
+
+.. code:: robotframework
+    :class: hidden
+
+    *** Settings ***
+
+    | Suite Setup | Set Library Search Order | ExtendedSelenium2Library | Selenium2Library
+
+    Resource       robotframework_odoo/odoo_8_0.robot
+    Resource       Selenium2Screenshots/keywords.robot
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
 
 
 Indices and tables

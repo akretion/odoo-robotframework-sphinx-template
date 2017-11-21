@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+
+import os
+
 #
 # Odoo Executable Documentation by Akretion documentation build configuration file, created by
 # sphinx-quickstart on Tue Nov 21 15:56:54 2017.
@@ -30,8 +33,23 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.ifconfig',
-    'sphinx.ext.viewcode']
+extensions = [
+    'sphinx.ext.viewcode',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
+#    'sphinx.ext.mathjax',
+    'sphinx.ext.ifconfig',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages',
+    'sphinxcontrib_robotframework']
+
+
+sphinxcontrib_robotframework_variables = {
+    "CONFIG": "%s/../config.py" % (os.path.dirname(os.path.realpath(__file__)),)
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
