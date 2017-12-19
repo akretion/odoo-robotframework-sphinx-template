@@ -7,3 +7,4 @@ robotframework-selenium2screenshots
 robotframework-databaselibrary
 robotframework-xvfb
 psycopg2
+pillow
